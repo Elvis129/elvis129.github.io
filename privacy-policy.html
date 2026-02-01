@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Політика конфіденційності - ProСвітло</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #2c3e50;
+        }
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .lang-switch a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .lang-switch a:hover {
+            text-decoration: underline;
+        }
+        .last-updated {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        hr {
+            border: none;
+            border-top: 1px solid #ecf0f1;
+            margin: 40px 0;
+        }
+        .english {
+            display: none;
+        }
+    </style>
+    <script>
+        function toggleLanguage() {
+            const ukrainian = document.querySelectorAll('.ukrainian');
+            const english = document.querySelectorAll('.english');
+            
+            if (ukrainian[0].style.display === 'none') {
+                ukrainian.forEach(el => el.style.display = 'block');
+                english.forEach(el => el.style.display = 'none');
+            } else {
+                ukrainian.forEach(el => el.style.display = 'none');
+                english.forEach(el => el.style.display = 'block');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="#" onclick="toggleLanguage(); return false;">🇺🇦 Українська / 🇬🇧 English</a>
+        </div>
+
+        <!-- Ukrainian Version -->
+        <div class="ukrainian">
+            <h1>Політика конфіденційності ProСвітло</h1>
+            <p class="last-updated"><strong>Останнє оновлення: 22 грудня 2025</strong></p>
+
+            <h2>Огляд</h2>
+            <p>ProСвітло - мобільний додаток для відстеження відключень електроенергії в Хмельницькій області, Україна.</p>
+
+            <h2>Які дані ми збираємо</h2>
+            <ul>
+                <li><strong>ID пристрою</strong>: Анонімний ідентифікатор для push-сповіщень</li>
+                <li><strong>FCM токен</strong>: Токен Firebase для надсилання сповіщень</li>
+                <li><strong>Ваші адреси</strong>: Адреси, які ви зберігаєте для відстеження відключень (зберігаються локально на вашому пристрої)</li>
+            </ul>
+
+            <h2>Як ми використовуємо дані</h2>
+            <ul>
+                <li>Надсилання push-сповіщень про відключення електроенергії</li>
+                <li>Відображення графіків відключень для ваших збережених адрес</li>
+                <li>Покращення функціональності додатку</li>
+            </ul>
+
+            <h2>Зберігання даних</h2>
+            <ul>
+                <li>Усі дані про адреси зберігаються локально на вашому пристрої</li>
+                <li>ID пристрою та FCM токени зберігаються на нашому захищеному сервері</li>
+                <li>Ми НЕ збираємо та НЕ зберігаємо персональні дані (ім'я, email, номер телефону)</li>
+            </ul>
+
+            <h2>Сторонні сервіси</h2>
+            <p>Ми використовуємо наступні сервіси:</p>
+            <ul>
+                <li><strong>Firebase Cloud Messaging</strong>: Для надсилання push-сповіщень</li>
+                <li><strong>Fly.io</strong>: Для хостингу серверної частини</li>
+                <li><strong>Google AdMob</strong>: Для показу реклами в додатку</li>
+            </ul>
+
+            <h2>Реклама</h2>
+            <p>Додаток використовує Google AdMob для показу рекламних банерів. AdMob може збирати певну інформацію для персоналізації реклами:</p>
+            <ul>
+                <li>Рекламний ідентифікатор пристрою (Advertising ID)</li>
+                <li>Інформацію про пристрій та версію ОС</li>
+                <li>Дані про взаємодію з рекламою</li>
+            </ul>
+            <p>Ви можете керувати налаштуваннями реклами в налаштуваннях вашого пристрою:</p>
+            <ul>
+                <li><strong>Android</strong>: Налаштування → Google → Реклама → Скинути рекламний ідентифікатор</li>
+                <li><strong>iOS</strong>: Налаштування → Конфіденційність → Реклама → Обмежити відстеження реклами</li>
+            </ul>
+
+            <h2>Ваші права</h2>
+            <p>Ви маєте право:</p>
+            <ul>
+                <li>Видалити збережені адреси в будь-який момент</li>
+                <li>Вимкнути push-сповіщення в налаштуваннях додатку</li>
+                <li>Запросити видалення ваших даних з сервера, зв'язавшись з нами</li>
+            </ul>
+
+            <h2>Контакти</h2>
+            <p>З питань або для запиту на видалення даних:</p>
+            <ul>
+                <li>Email: <a href="mailto:prosvitlokhm@gmail.com">prosvitlokhm@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Elvis129/prosvitlo_app" target="_blank">https://github.com/Elvis129/prosvitlo_app</a></li>
+            </ul>
+
+            <h2>Зміни в політиці конфіденційності</h2>
+            <p>Ми можемо час від часу оновлювати цю політику. Перевіряйте дату "Останнє оновлення" для перегляду останньої версії.</p>
+        </div>
+
+        <!-- English Version -->
+        <div class="english">
+            <h1>Privacy Policy for ProСвітло</h1>
+            <p class="last-updated"><strong>Last Updated: December 22, 2025</strong></p>
+
+            <h2>Overview</h2>
+            <p>ProСвітло is a mobile application that helps users track electricity outages in Khmelnytskyi region, Ukraine.</p>
+
+            <h2>Data We Collect</h2>
+            <ul>
+                <li><strong>Device ID</strong>: Anonymous identifier for push notifications</li>
+                <li><strong>FCM Token</strong>: Firebase Cloud Messaging token for notifications</li>
+                <li><strong>User Addresses</strong>: Addresses you save for tracking outages (stored locally on your device)</li>
+            </ul>
+
+            <h2>How We Use Your Data</h2>
+            <ul>
+                <li>Send push notifications about electricity outages</li>
+                <li>Display outage schedules for your saved addresses</li>
+                <li>Improve app functionality</li>
+            </ul>
+
+            <h2>Data Storage</h2>
+            <ul>
+                <li>All address data is stored locally on your device</li>
+                <li>Device ID and FCM tokens are stored on our secure server</li>
+                <li>We do NOT collect or store any personal information (name, email, phone number)</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+            <p>We use the following services:</p>
+            <ul>
+                <li><strong>Firebase Cloud Messaging</strong>: For push notifications</li>
+                <li><strong>Fly.io</strong>: For backend hosting</li>
+                <li><strong>Google AdMob</strong>: For displaying ads in the app</li>
+            </ul>
+
+            <h2>Advertising</h2>
+            <p>The app uses Google AdMob to display advertising banners. AdMob may collect certain information to personalize ads:</p>
+            <ul>
+                <li>Device Advertising ID</li>
+                <li>Device information and OS version</li>
+                <li>Ad interaction data</li>
+            </ul>
+            <p>You can manage ad settings on your device:</p>
+            <ul>
+                <li><strong>Android</strong>: Settings → Google → Ads → Reset Advertising ID</li>
+                <li><strong>iOS</strong>: Settings → Privacy → Advertising → Limit Ad Tracking</li>
+            </ul>
+
+            <h2>Your Rights</h2>
+            <p>You can:</p>
+            <ul>
+                <li>Delete your saved addresses at any time</li>
+                <li>Disable push notifications in app settings</li>
+                <li>Request deletion of your device data by contacting us</li>
+            </ul>
+
+            <h2>Contact</h2>
+            <p>For questions or data deletion requests, contact:</p>
+            <ul>
+                <li>Email: <a href="mailto:prosvitlokhm@gmail.com">prosvitlokhm@gmail.com</a></li>
+                <li>GitHub: <a href="https://github.com/Elvis129/prosvitlo_app" target="_blank">https://github.com/Elvis129/prosvitlo_app</a></li>
+            </ul>
+
+            <h2>Changes to Privacy Policy</h2>
+            <p>We may update this policy from time to time. Check the "Last Updated" date for the latest version.</p>
+        </div>
+    </div>
+</body>
+</html>
